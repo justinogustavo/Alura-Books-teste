@@ -1,0 +1,29 @@
+@import url("estilo/header.css");
+@import url("estilo/banner.css");
+@import url("estilo/carrossel.css");
+@import url("estilo/topico.css");
+@import url("estilo/contato.css");
+@import url("estilo/footer.css");
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap');
+:root{
+
+    --cor-branco: #ffffff;
+    --cor-carrosel: #EBECEE;
+    --cor-laranja: #EB9B00;
+    --cor-azul: linear-gradient(97.54deg, #002f52 35.49%, #326589 165.37%);
+    --fonte-titulo:'Poppins', sans-serif;
+    --cor-texto: #002f52;
+    --cor-preto: #000000;
+    --font-secundaria: 'Josefin Sans', sans-serif;
+   
+
+    
+}
+body{
+    background-color: var(--cor-carrosel);
+    font-family: var(--fonte-titulo);
+    font-size: 16px;
+    font-weight: 400;
+}
+ 

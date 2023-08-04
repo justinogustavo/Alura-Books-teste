@@ -1,0 +1,130 @@
+.cabecalho_menu-hamburguer{
+    width: 35px;
+    height: 38px;
+    background-image: url("../assents/Menu.svg");
+    display: inline-block;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.cabecalho{
+background-color: var(--cor-branco);
+display: flex;
+justify-content: space-between;
+align-items: center;
+position: relative;
+
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    
+}
+.conatainer-imagem{
+    padding: 1em;
+}
+.lista{
+    display: none;
+    position: absolute;
+    top: 100%;
+    width: 60vw;
+}
+.container_botao:checked~.lista{
+    display: block;
+}
+
+.lista-menu_titulo, 
+.lista-menu_item{
+    padding: 1em;
+    background-color: var(--cor-branco);
+    
+}
+.lista-menu_titulo{
+    color: var(--cor-laranja);
+    font-weight: 700;
+}
+
+.lista-menu__link{
+    background-color: var(--cor-azul);
+    -webkit-background-clip: text;
+    background-clip: text;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+.container_botao{
+    display: none;
+}
+.container__titulo{
+    display: none ;
+}
+.opcoes{
+    display: none;
+}
+
+.container__texto_imagem{
+    display: none;
+}
+@media screen and (min-width: 1024px)
+{
+        .container__titulo, 
+        .container__titulo_negrito { 
+            font-family: var(--font-secundaria);
+            font-size: 30px;
+        }
+        .container__titulo{
+            font-weight: 400;
+            display: block;
+        }
+        .container__titulo_negrito{
+            font-weight: 700 ;
+        }
+        .opcoes{
+            display: flex;
+            
+        }
+
+        .opcoes_item{
+            padding: 1em;
+            text-transform: uppercase;
+        }
+
+        .opcoes__links{
+            text-decoration: none;
+            color: var(--cor-preto);
+        }
+        .conatainer-imagem__favorito {
+            display: none;
+        }
+        .cabecalho_menu-hamburguer{
+            display: none;
+        }
+
+        .opcoes__botoes:checked~.lista{
+                display: block;
+                width: auto;
+        }
+        .opcoes__botoes{
+            display: none;
+        }
+}
+
+@media screen and (min-width: 1728px){
+    .container__link{
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        color: var(--cor-preto);
+    }
+    .cabecalho{
+        padding: 0 2em;
+    }
+
+    .opcoes{
+        margin-right: auto;
+    }
+
+    .container__texto_imagem{
+        display: block;
+    }
+}
